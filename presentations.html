@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Presentations</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+    .tex { text-transform: uppercase; vertical-align: -.5ex; margin-left: -.1667em; 
+    		margin-right: -.125em; }
+    dl { display: grid; grid-template-columns: max-content auto; margin-left: 3em;
+		margin-right: 3em;}
+    dt { grid-column-start: 1; margin-right: 1em;}
+    dd { grid-column-start: 2; margin-left: 1em;}
+    dt, dd { margin-top: 1ex; }
+    span.suppress { display: none; }
+
+@media only screen and (max-width: 768px) {
+dl {
+margin-left: 0em; margin-right: 0em;
+}
+}
+</style>
+
+<style>
+.container-fluid { max-width: 80% }
+
+@media only screen and (max-width: 768px) {
+  .container-fluid {
+    max-width:100%
+  }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="home.html">Joshua Lee Padgett</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="publications.html">Publications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="presentations.html">Presentations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="teaching.html">Teaching</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="people.html">People</a>
+      </li>  
+
+<li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        More
+      </a>
+      <div class="dropdown-menu bg-dark dropdown-menu-right">
+        <a class="dropdown-item" href="grant.html"><font style="color:#ffffff">NSF Grant</font></a>
+        <a class="dropdown-item" href="JMM_Special_Session.html"><font style="color:#ffffff">JMM Special Session</font></a>
+        <a class="dropdown-item" href="http://myweb.ttu.edu/jopadget/RR/index.html"><font style="color:#ffffff">Red Raider 2020</font></a>
+        <a class="dropdown-item" href="latex.html"><font style="color:#ffffff">LaTeX Material (Quick Start)</font></a>
+      </div>
+    </li> 
+    </ul>
+  </div>  
+</nav>
+<br>
+
+<div class="container-fluid justify-content-center" style="margin-top:40px">
+   <div class="row">
+      <div class="col">
+
+
+<p>
+<h3>Presentations</h3>
+</p>
+
+<ol reversed >
+
+<li style="text-align:justify;"><p><em>A proof that deep neural networks overcome the curse of dimensionality in the numerical approximation of semilinear heat equations</em>; Applied Mathematics Seminar; Department of Mathematics and Statistics, Texas Tech University; Lubbock, Texas (March 11, 2020) (invited).
+
+<button onclick="talk1131()">Abstract</button></p>
+
+<div id="myDIVtalk1131" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><strong>Abstract:</strong> Deep neural networks and other deep learning methods have very successfully been applied to the numerical approximation of high-dimensional nonlinear parabolic partial differential equations (PDEs). In particular, simulations indicate that algorithms based on deep learning overcome the curse of dimensionality in the numerical approximation of solutions of semilinear PDEs. For certain linear PDEs this has also been proved mathematically. However, proofs in the more general case have been difficult to rigorously formulate. To that end, we present a novel framework to alleviate this issue. In this talk, we will briefly introduce the concept of deep learning and then define an abstract framework which is amenable to proving theoretical results. We then prove some auxiliary results regarding the representation of particular approximations of a class of PDEs. In particular, we prove in the case of semilinear heat equations with gradient-independent nonlinearities that the numbers of parameters of the employed deep neural networks grow at most polynomially in both the PDE dimension and the reciprocal of the prescribed approximation accuracy. Our proof relies on recently introduced full history recursive multilevel Picard approximations of semilinear PDEs.</blockquote>
+</div>
+
+<script>
+function talk1131() {
+  var x = document.getElementById("myDIVtalk1131");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+                  
+</li>
+
+<li style="text-align:justify;"><p><em>A nonlinear splitting algorithm for preserving asymptotic features of stochastic singular differential equations</em>; Joint Mathematics Meeting, Special Session; Denver, Colorado (January 2020) (invited). 
+
+<button onclick="talk113()">Abstract</button></p>
+
+<div id="myDIVtalk113" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><strong>Abstract:</strong> In this talk we present a nonlinear splitting algorithm for approximating stochastic singular differential equations. In particular, we focus on problems whose singularities induce finite-time blow-up of either the solution, or its derivative, with respect to the expectation of the given norm. The proposed splitting algorithm allows for the careful handling of the singular and stochastic parts, separately. We also develop an adaptive time-stepping algorithm, based on the self-similarity of the true solution of the underlying system, which guarantees that the numerical approximation captures the asymptotic features of the problem—such as blow-up rates and blow-up time. Moreover, we provide convergence and stability results for the general abstract setting (which includes finite difference, finite element, and spectral discretizations of the spatial differential operators), demonstrating the robustness of the proposed algorithm. If time permits, we will briefly mention how the proposed method can be generalized to derive methods of arbitrarily high order. Numerical experiments will be provided to verify the theoretical results.</blockquote>
+</div>
+
+<script>
+function talk113() {
+  var x = document.getElementById("myDIVtalk113");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+                  
+</li>
+
+<li style="text-align:justify"><p><em>Modeling physical systems with the fractional Laplace operator and its use in the Anderson localization problem</em>; The Center for Astrophysics, Space Physics, and Engineering Research; Baylor University; Waco, Texas (November 2019) (invited).
+
+<button onclick="talk1133()">Abstract</button></p>
+
+<div id="myDIVtalk1133" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><strong>Abstract:</strong> It is well known that many physical systems will exhibit localized energy states in the presence of certain environmental disturbances. The Anderson localization problem has been a highly active area of research and has attracted attention from the physics, mathematical physics, numerical analysis, and pure analysis communities. In this talk, we will provide two new directions of study of the Anderson localization problem. First, we will extend the problem to consider nonlocal operators on discrete graphs. Next, we will develop a novel method of studying the localization properties of these nonlocal operators via the consideration of the spectrum of the operators. This approach allows for the development of surprising results that can potentially lead to the improvement of many existing results. This talk will include a review of the pertinent concepts from mathematics (both computations and analysis) and introduce the notion of modeling systems via nonlocal operators---making the talk accessible to all graduate students (even those who do not study mathematics).</blockquote>
+</div>
+
+<script>
+function talk1133() {
+  var x = document.getElementById("myDIVtalk1133");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+                     
+</li>
+
+<li style="text-align:justify"><p><em>A semi-analytical approach to approximating non-local equations arising in porous media</em>; SIAM Northern States Section; Laramie, Wyoming (September 2019) (invited). 
+
+<button onclick="talk112()">Abstract</button></p>
+
+<div id="myDIVtalk112" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><strong>Abstract:</strong> Recent years have seen an increased focus on the application of non-local equations for modeling various multi-physics problems. In particular, the use of such models can potentially improve the modeling of porous media flows, as they may reduce the continuity issues which arise near reservoir flow. While these novel models offer improvements in this direction, the approximations of these equations is more difficult. As such, there is a strong need for the development and analysis of robust numerical methods for solving non-local equation related to porous media flow. In this talk, we will introduce the proposed non-local model and develop a numerical method which takes advantage of several abstract results for singular and degenerate differential equations. This approach allows for the development of a numerical method which can be applied to numerous problems of interest. Moreover, the method is quite efficient (especially when compared with other methods for similar problems). Finally, numerical simulations will be provided to verify the presented theory.</blockquote>
+</div>
+
+<script>
+function talk112() {
+  var x = document.getElementById("myDIVtalk112");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+                  
+</li>
+
+<li style="text-align:justify"><p><em>A nonlinear splitting algorithm for approximating population models with self- and cross-diffusion</em>; Biomathematics Seminar; Department of Mathematics and Statistics, Texas Tech University; Lubbock, Texas (September 2019) (invited).
+
+<button onclick="talk112a()">Abstract</button></p>
+
+<div id="myDIVtalk112a" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><strong>Abstract:</strong> Self- and cross-diffusion are important, and often neglected, nonlinear spatial derivative terms that are included into population models in ecology. These terms are especially important in modeling predator-prey interactions. Self-diffusion models overcrowding effects, while cross-diffusion incorporates the response of one species in light of the concentration of another. These important terms can complicate simulating the underlying system, rendering classical computational techniques useless (or, at least highly inefficient). In this talk, we will introduce a novel computational algorithm based on operator splitting. This method will be shown to be accurate and stable through rigorous analysis. If time permits, we will also discuss adaptive time-stepping methods which exactly preserve the blow-up rate of the original model (when blow-up occurs), which are based on the self-similarity of the underlying physical system. Numerical experiments will be presented in order to demonstrate the efficiency of this approach when considering a generalized Shigesada-Kawasaki-Teramoto (SKT) model.</blockquote>
+</div>
+
+<script>
+function talk112a() {
+  var x = document.getElementById("myDIVtalk112a");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+                  
+</li>
+
+<li style="text-align:justify"><p><em>Hopf algebraic structure of numerical integrators for integro-differential equations</em></span>; Geometry, Compatibility, and Structure-Preserving Conference; Issac Newton Institute, Cambridge University; Cambridge, United Kingdom (July 2019).</p>
+                     
+</li>
+
+<li style="text-align:justify"><p><em>Semi-analytical methods for the aproximation of abstract fractional extension problems</em>; Applied Mathematics Seminar; Department of Mathematics and Statistics, Texas Tech University; Lubbock, Texas (April 2019) (invited). 
+
+<button onclick="talk111()">Abstract</button></p>
+
+<div id="myDIVtalk111" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><strong>Abstract:</strong> In recent years, fractional differential equations have become quite prevalent in applied mathematics. When used correctly, these non-local operators can model non-standard transport, such as anomalous diffusion, in many applications of interest (such as porous media). Approximations of fractional operators is still a highly nontrivial process as one must preserve the non-locality of the underlying operators in order of for the method to be valid. In this talk, we will introduce the notion of fractional powers of a class of abstract operators and construct appropriate approximations of these operators via a generalization of a method employed by Caffarelli and Silvestre. These techniques make no assumption of boundedness on the operators, and thus, may be employed in numerous numerical and analytical settings. The stability and convergence of this method can easily be related back to the spectral nature of the operator of interest. Numerical experiments will be presented to further verify the presented results.</blockquote>
+</div>
+
+<script>
+function talk111() {
+  var x = document.getElementById("myDIVtalk111");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+                  
+</li>
+
+<li style="text-align:justify"><p><em>Anderson localization in nonlocal models</em></span>; Analysis Seminar; Department of Mathematics and Statistics, Texas Tech University; Lubbock, Texas (February 2019) (invited). 
+
+<button onclick="talk1()">Abstract</button></p>
+
+<div id="myDIVtalk1" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><strong>Abstract:</strong> It is well known that many physical systems will exhibit localized energy states in the presence of certain environmental disturbances. Anderson localization has attracted attention from the physics, mathematical physics, numerical analysis, and pure analysis communities, but in this talk we will provide a more operator theoretical approach. In this talk, we will provide two new directions of study of the Anderson localization problem. First, we will extend the problem to consider nonlocal operators on discrete graphs.
+Next, we will develop a novel method of studying the localization properties of these nonlocal operators via the consideration of the spectrum of the operators. This approach allows for the development of surprising results that allow for the improvement of many existing results. This series of talks will include a review of the pertinent concepts from analysis, making the talk accessible to all graduate students (even those who do not study analysis).</blockquote>
+</div>
+
+<script>
+function talk1() {
+  var x = document.getElementById("myDIVtalk1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+                  
+</li>
+
+<li style="text-align:justify"><p><em>Operator splitting methods for approximating singular nonlinear differential equations</em>; Numerical Analysis Seminar; Department of Mathematical Sciences, University of Delaware; Newark, Delaware (November 2018) (invited). 
+
+<button onclick="myFunction()">Abstract</button></p>
+
+<div id="myDIV" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><strong>Abstract:</strong> Operator splitting techniques were originally introduced in an effort to save computational costs in numerical simulations. Classically, such methods were restricted to dimensional splitting of evolution operators. However, these methods have since been extended to allow for splitting of problems involving nonlinear operators which evolve on vastly different time scales. In this talk I will introduce the notion of nonlinear operator splitting and rigorously justify the approach by considering some techniques from Lie group theory. This is a nonstandard presentation that should also be accessible to graduate students. The second half of the talk will provide results concerning two very interesting applications of operator splitting techniques: nonlinear stochastic problems and singular combustion problems. The former problems have traditionally been plagued with low-order techniques with restrictive regularity conditions, while the latter have the need for strongly adaptive methods which recover important qualitative properties. We will discuss in detail how operator splitting provides solutions to these issues, while also being straightforward to implement.</blockquote>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+                  
+</li>
+
+<li style="text-align:justify"><p><em>Operator splitting methods for approximating singular nonlinear differential equations</em>; Department Colloquium; Department of Mathematics, Baylor University; Waco, Texas (November 2018) (invited). 
+
+<button onclick="myFunction1()">Abstract</button></p>
+
+<div id="myDIV2" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><strong>Abstract:</strong> In this talk we introduce the notion of operator splitting for nonlinear equations. We formulate the approach in the language of Magnus expansions in abstract spaces, allowing us to combine the language of semigroups with nonlinear operators. The focus of the talk will be extending these techniques to approximating solutions of stochastic differential equations in Hilbert spaces. These approximation techniques allow for the development of numerical methods which are of arbitrary order, yet have lower regularity conditions when compared to many existing methods. Moreover, the methods may easily be generalized to differential problems posed on smooth manifolds. If time permits, we will discus how operator splitting methods may be employed to construct approximations which respect the underlying Lie group structure of the problem at hand. There will be a thorough introduction to the considered methods and the talk will be accessible to interested graduate students.</blockquote>
+</div>
+
+<script>
+function myFunction1() {
+  var x = document.getElementById("myDIV2");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</li>
+
+<li style="text-align:justify"><p><em>Numerical integration techniques on manifolds and their Hopf algebraic structure</em>; Geometry Seminar; Department of Mathematics and Statistics, Texas Tech University; Lubbock, Texas (October 2018) (invited). 
+
+<button onclick="myFunc3()">Abstract</button></p>
+
+<div id="myDI3" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><strong>Abstract:</strong> Lie group integrators are a class of numerical integration methods which approximate the solution to differential equations which preserve the underlying geometric structure of the true solution. In this talk, we consider a commutative graded Hopf algebraic structure arising in the order theory and backward error analysis of such Lie group methods. We will consider recursive and direct formulae for the coproduct and antipode, while emphasizing the connection to the Hopf algebra of classical Butcher theory and the Hopf algebra structure of the shuffle algebra. The talk will provide the necessary background to make it accessible to graduate students. </blockquote>
+</div>
+
+<script>
+function myFunc3() {
+  var x = document.getElementById("myDI3");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+                  
+</li>
+
+<li style="text-align:justify"><p><em>Analysis of exponential-type integration method for nonlocal diffusion problems</em>; SIAM Annual Meeting; Special Session; Eugene, Oregon (June 2018) (invited). 
+
+<button onclick="myFunc4()">Abstract</button></p>
+
+<div id="myDI4" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><strong>Abstract:</strong> In recent years numerous physically relevant phenomena have been shown to demonstrate a non-standard diffusive process known as anomalous diffusion. Such models are mathematically interesting due to the non-local nature of the involved operators, such as the fractional Laplacian. Despite the growing interest in such problems, the existing numerical methods are still plagued by reduced convergence rates and inefficient implementations. This talk will focus on approximating an abstract Bessel-type equation which is an extension of the non-local problem of interest. From this extension problem, an efficient method with desirable convergence properties will be developed and analyzed. Numerical examples will be provided to demonstrate the results. </blockquote>
+</div>
+
+<script>
+function myFunc4() {
+  var x = document.getElementById("myDI4");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+               
+</li>
+
+<li style="text-align:justify"><p><em>Lie-Butcher series from an algebraic geometry point of view</em>; Geometry Seminar; Department of Mathematics and Statistics, Texas Tech University; Lubbock, Texas (April 2018) (invited). 
+</li>
+
+<li style="text-align:justify"><p><em>Approximating the fractional Laplace equation via operator theoretical methods</em>; West Texas Applied Math Symposium; Department of Mathematics and Statistics, Texas Tech University; Lubbock, Texas (April 2018) (invited). 
+
+<button onclick="myFunc6()">Abstract</button></p>
+
+<div id="myDI6" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><strong>Abstract:</strong> In  recent  years  numerous  physically  relevant  phenomena  have
+been shown to demonstrate a non-standard diffusive process known
+as anomalous diffusion.  Such models are mathematically interesting
+due to the non-local nature of the involved operators, such as the
+fractional Laplacian.  Despite the growing interest in such problems,
+the existing numerical methods are still plagued by reduced conver-
+gence rates and inefficient implementations.  This talk will focus on
+approximating  an  abstract  extension  problem  which  is  equivalent
+to the non-local problem of interest.  From this extension problem,
+an  efficient  method  with  desirable  convergence  properties  will  be
+developed  and  analyzed.   Numerical  examples  will  be  provided  to
+demonstrate the results </blockquote>
+</div>
+
+<script>
+function myFunc6() {
+  var x = document.getElementById("myDI6");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+                  
+</li>
+
+<li style="text-align:justify"><p><em>An introduction to geometric numerical integration</em>; Geometry Seminar; Department of Mathematics and Statistics, Texas Tech University; Lubbock, Texas (March 2018) (invited).</p>
+                  
+</li>
+
+<li style="text-align:justify"><p><em>Operator splitting methods for approximating differential equations</em>; Junior Scholar Symposium; Department of Mathematics and Statistics, Texas Tech University; Lubbock, Texas (February 2018) (invited).</p>
+                  
+</li>
+
+<li style="text-align:justify"><p><em>An operator theoretical approach to nonlocal differential equations</em>; Analysis Seminar; Department of Mathematics and Statistics, Texas Tech University; Lubbock, Texas (November 2017) (invited). 
+
+<button onclick="as()">Abstract</button></p>
+
+<div id="as" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><strong>Abstract:</strong> Nonlocal differential equations are receiving increasing attention due to their ability to accurately model many physically relevant phenomena such as anomalous diffusion and non-Fickian transport. The resulting models exhibit difficulties not seen  in standard local models and require careful treatment and attention. In an effort to study problems more efficiently, we consider an operator theoretical approach to solving such problems. This method attempts to mirror the classical approach of solving differential equations through semigroup theory, however, nonlocal problems will have solutions generated by generalized Mittag-Leffler functions. Properties of these operators will be discussed and compared with classical semigroup operators. The theory will be well-motivated through an explicit example of interest. Proposed future considerations will also be briefly mentioned in order to give an idea of research potential.  </blockquote>
+</div>
+
+<script>
+function as() {
+  var x = document.getElementById("as");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+                  
+</li>
+		   
+<li style="text-align:justify"><p><em>Operator splitting and Lie group methods for geometric integration</em>; Seminar in Applied Mathematics; Department of Mathematics and Statistics, Texas Tech University; Lubbock, Texas (November 2017) (invited). 
+
+<button onclick="am()">Abstract</button></p>
+
+<div id="am" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><strong>Abstract:</strong> Geometric integration is the discipline concerned with the discretization of differential equations while conserving exactly their invariants. The motivation for developing structure-preserving algorithms for certain classes of differential equations originates from diverse areas such as astronomy, molecular dynamics, mechanics, control theory, theoretical physics, and numerical analysis. If the equations of interest evolve on Lie groups, then geometric integration methods will guarantee that all approximations remain in the appropriate Lie group. In this talk we will consider Lie group methods for designing structure-preserving schemes with special emphasis on operator splitting methods. Operator splitting in a Lie group setting is primarily concerned with effectively approximating the exponential map and guaranteeing that such approximations map elements from the appropriate Lie algebra to the corresponding Lie group. The talk will consider concrete examples throughout, removing the need for a deep understanding of Lie group theory, and will conclude with several examples of how such methods may be applied to problems of interest.  </blockquote>
+</div>
+
+<script>
+function am() {
+  var x = document.getElementById("am");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+                    
+</li>
+
+<li style="text-align:justify"><p><em>An exploration of quenching-combustion via globalized fractional models</em>; SIAM Annual Meeting, Special Session; Pittsburgh, Pennsylvania (July 2017) (invited).</p>
+                    
+</li>
+
+<li style="text-align:justify"><p><em>Solving degenerate stochastic Kawarada equations via adaptive operator splitting methods</em>; University of Central Arkansas; Conway, Arkansas (January 2017) (invited).</p>
+                    
+</li>
+
+<li style="text-align:justify"><p><em>An approach to the numerical solution of multidimensional stochastic Kawarada equations via adaptive operator splitting</em>; Joint Mathematics Meeting; Atlanta, Georgia (January 2017).
+
+<button onclick="jmm2()">Abstract</button></p>
+
+<div id="myjmm2" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><strong>Abstract:</strong> This talk concerns the numerical solution of multidimensional nonlinear Kawarada equations. The stochastically influenced degenerate reaction-diffusion equations exhibit strong singularities and play an important role in numerous industrial applications. Moving mesh strategies and operator splitting are utilized throughout the approach to yield favorable adaptive grids in both space and time. Highly efficient and effective nonuniform difference schemes are developed. It is shown that the numerical solution acquired not only approximates the theoretical solution satisfactorily, but also preserves the required positivity, monotonicity and stability of the solution when proper constraints are satisfied. The
+latter is particularly crucial to quenching-combustion simulations. Numerical experiments are given to illustrate and demonstrate our conclusions. </blockquote>
+</div>
+
+<script>
+function jmm2() {
+  var x = document.getElementById("myjmm2");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+                    
+</li>
+		  
+<li style="text-align:justify"><p><em>Using Matlab to solve nonlinear PDE</em>; AMS Student Meeting; Baylor University; Waco, Texas (October 2016).</p>
+                    
+</li>
+
+<li style="text-align:justify"><p><em>Using an adaptive Crank-Nicolson scheme to solve the degenerate stochastic Kawarada equation on nonuniform grids</em>; SIAM Central States Section Meeting, Special Session; Little Rock, Arkansas (September 2016) (invited).</p>
+                    
+</li>
+		  
+<li style="text-align:justify"><p><em>Positive and monotone solutions to quenching differential equations</em>; Differential Equations Seminar; Baylor University; Waco, Texas (April 2016, 6 lectures).</p>
+                    
+</li>
+
+<li style="text-align:justify"><p><em>A semi-adaptive LOD method for solving three-dimensional degenerate Kawarada equations</em>; AMS Spring Southeastern Sectional Meeting; Athens, Georgia (March 2016).</p>                    
+
+</li>
+
+<li style="text-align:justify"><p><em>A novel LOD method for solving degenerate Kawarada equations</em>; CASPER Seminar; Waco, Texas (February (2016) (invited).</p>
+                    
+</li>
+
+<li style="text-align:justify"><p><em>Numerical solutions to singular differential equations</em>; AMS Student Meeting; Baylor University; Waco, Texas (October 2015).</p>
+                     
+</li>
+
+<li style="text-align:justify"><p><em>An exploration of exponential splitting</em></span>; Joint Mathematics Meeting, Special Session; San Antonio, Texas (January 2015) (invited).
+
+<button onclick="jmm1()">Abstract</button></p>
+
+<div id="myjmm1" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><strong>Abstract:</strong> Exponential splitting methods have been widely utilized for computing numerical solutions of partial differential equations. Different types of error estimates for the splitting procedures have been introduced and studied. In this talk, we will
+present an improved, new global error analysis for key exponential splitting formulations based on the commutativity of matrix exponentials resulting from different exponential splitting formulas.  Computational examples will be provided to illustrate our theoretical results and expectations. </blockquote>
+</div>
+
+<script>
+function jmm1() {
+  var x = document.getElementById("myjmm1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+                    
+</li>
+		    		    
+</ol>
+
+
+<!---->
+<!---->
+<!--The following finishes off the bottom of the web page-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<!--Horizontal line for bottom of page-->
+
+<hr style="height:2px;border:none;color:#333;background-color:#333;">
+
+<!--End of Horizontal line for bottom of page-->    
+
+<center>
+<script 
+  type="text/JavaScript" 
+  language="JavaScript">
+
+function date_ddmmmyy(date)
+{
+  var d = date.getDate();
+  var m = date.getMonth() + 1;
+  var y = date.getFullYear();
+
+  var mmm = 
+    ( 1==m)?'January':( 2==m)?'February':(3==m)?'March':
+    ( 4==m)?'April':( 5==m)?'May':(6==m)?'June':
+    ( 7==m)?'July':( 8==m)?'August':(9==m)?'September':
+    (10==m)?'October':(11==m)?'November':'December';
+
+  return "" + mmm + " " +
+    (d<10?"0"+d:d) + ", " +
+    (y<10?"0"+y:y);
+}
+
+function date_lastmodified()
+{
+  var lmd = document.lastModified;
+  var s   = "Unknown";
+  var d1;
+
+  if(0 != (d1=Date.parse(lmd)))
+  {
+    s = "" + date_ddmmmyy(new Date(d1));
+  }
+
+  return s;
+}
+
+document.write( 
+  "This page was last modified on: " + 
+  date_lastmodified() );
+</script>
+</center>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</div></div></div>
+
+
+
+<script>
+$(document).click(function(e) {
+	if (!$(e.target).is('a')) {
+    	$('.collapse').collapse('hide');	    
+    }
+});
+
+$(document).scroll(function(e) {
+	if (!$(e.target).is('a')) {
+    	$('.collapse').collapse('hide');	    
+    }
+});
+</script>
+
+</body>
+</html>
+
+
+

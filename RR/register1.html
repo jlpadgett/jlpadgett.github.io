@@ -1,0 +1,320 @@
+<html>
+<head>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script src="form.js"></script>
+
+<style>
+.funding-request .if-checked {
+	display: none;
+}
+
+.funding-request input[value="Yes"]:checked ~ .if-checked {
+	display: block;
+}
+
+.choice .other-checked {
+	display: none;
+}
+
+.choice input[value="Other"]:checked ~ .other-checked{
+	display: block;
+    input[type="file"]:required{}
+}
+
+.room-request .room-checked {
+	display: none;
+}
+
+.room-request input[value="Yes"]:checked ~ .room-checked{
+	display: block;
+    input[type="file"]:required{}
+}
+
+.poster-request .if-yes-checked {
+	display: none;
+}
+
+.poster-request input[value="Yes"]:checked ~ .if-yes-checked{
+	display: block;
+    input[type="file"]:required{}
+}
+</style>
+
+<link rel="StyleSheet" href="style.css" type="text/css" media="screen">
+<title>RR2020 Register</title>
+</head>
+
+<body>
+
+<div id="mainContent">
+<iframe frameborder="0" scrolling="no" class="header" src="header.html">Nope, false, your browser must support iframes. It's 2016.</iframe>
+
+<div class="subContent">
+
+<h1>Conference Registration</h1>
+
+<p>
+In order to register for the conference, please enter your information below.
+</p>
+
+<p>
+There are limited travel funds for this conference (with preference given to early-career researchers and traditionally underrepresented minorities). 
+</p>
+
+<p>
+If you would like to be considered for travel support, you will be required to present a poster during the minisymposium's poster session. In order to guarantee full consideration for travel support, please choose "Yes" to be considered for travel funding and then provide the additional requested information.
+</p>
+
+<p>
+<b>Note:</b> The deadline to register and be considered for travel support is Thursday, March 12, 2020 at 11:59pm CST.
+</p>
+<br>
+
+<div class="container" style="width:700">
+
+<form role="form" method="post" id="reused_form" action="handler.php" enctype="multipart/form-data" >
+                        
+<div class="form-group">
+<label for="name"> Name:</label>
+<input type="text" class="form-control" id="name" name="name" required>
+</div>
+                        
+<div class="form-group">
+<label for="email"> Email:</label>
+<input type="email" class="form-control" id="email" name="email" required>
+</div>
+
+<div class="form-group">
+<label for="school"> University:</label>
+<input type="school" class="form-control" id="school" name="school" required>
+</div>
+
+<div class="form-group" required>
+<label for="position"> Academic Position:</label>
+<!--
+<textarea class="form-control" type="textarea" name="position" id="position" placeholder="e.g., Professor, Postdoc, Graduate Student, etc."></textarea>
+-->
+<br>
+<div class="choice">
+<input type="radio" name="position" id="1" value="Professor" required />
+<label for="1" style="font-weight:normal;margin-left:5px">Professor</label>
+<br>
+<input type="radio" name="position" id="2" value="Associate Professor"/>
+<label for="2" style="font-weight:normal;margin-left:5px">Associate Professor</label>
+<br>
+<input type="radio" name="position" id="3" value="Assistant Professor"/>
+<label for="3" style="font-weight:normal;margin-left:5px">Assistant Professor</label>
+<br>
+<input type="radio" name="position" id="4" value="Research Associate"/>
+<label for="4" style="font-weight:normal;margin-left:5px">Research Associate</label>
+<br>
+<input type="radio" name="position" id="5" value="Postdoc"/>
+<label for="5" style="font-weight:normal;margin-left:5px">Postdoc</label>
+<br>
+<input type="radio" name="position" id="6" value="Graduate Student"/>
+<label for="6" style="font-weight:normal;margin-left:5px">Graduate Student</label>
+<br>
+<input type="radio" name="position" id="7" value="Undergraduate Student"/>
+<label for="7" style="font-weight:normal;margin-left:5px">Undergraduate Student</label>
+<br>
+<input type="radio" name="position" id="8" value="Commercial"/>
+<label for="8" style="font-weight:normal;margin-left:5px">Commercial</label>
+<br>
+<input type="radio" name="position" id="9" value="Non-Profit"/>
+<label for="9" style="font-weight:normal;margin-left:5px">Non-Profit</label>
+<br>
+<input type="radio" name="position" id="10" value="Government"/>
+<label for="10" style="font-weight:normal;margin-left:5px">Government</label>
+<br>
+<input type="radio" name="position" id="11" value="Other"/>
+<label for="11" style="font-weight:normal;margin-left:5px">Other</label>
+<br>
+<div class="other-checked" style="margin-left:30px">
+<div class="form-group">
+<label for="other">If "Other" please clarify:</label>
+<input type="text" class="form-control" id="other" name="other">
+</div>
+</div>
+</div>
+</div>
+
+<div class="form-group">
+<label for="poster"> Would you like to present a poster in the poster session?</label>
+<div class="poster-request">
+<input type="radio" name="poster" id="yyes" value="Yes" required />
+<label for="yes" style="width:100px;font-weight:normal;margin-left:5px">Yes</label>
+<input type="radio" name="poster" id="nno" value="No"/>
+<label for="no" style="font-weight:normal;margin-left:5px">No</label>
+
+<p>
+<div class="if-yes-checked">
+<div id="Yes">
+<div class="form-group">
+Please provide your poster information below.
+</p>
+
+<p>
+<div class="form-group">
+<label for="Title"> Please provide a short title for your poster presentation (required if requesting funds):</label>
+<input type="text" class="form-control" id="title" name="title">
+</div>
+</p>
+
+<p>
+<div class="form-group">
+<label for="Abstract"> Please provide a short abstract for your poster presentation (required if requesting funds):</label>
+<textarea type="textarea" class="form-control" id="abstract" name="abstract" rows="7"></textarea>
+</div>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="form-group">
+<label for="funds"> Would you like to be considered for travel funding?</label> 
+<div class="funding-request">
+<input type="radio" name="funding" id="yes" value="Yes" required />
+<label for="yes" style="width:100px;font-weight:normal;margin-left:5px">Yes</label>
+<input type="radio" name="funding" id="no" value="No"/>
+<label for="no" style="font-weight:normal;margin-left:5px">No</label>
+
+<div class="if-checked">
+<div id="Yes">
+<div class="form-group">
+
+<p>
+In order to be considered for funding, please provide the additional information below.
+</p>
+
+<p>
+<b>Note:</b> In order to be considered you are now required to provide a title and abstract for the poster session.
+</p>
+
+<div class="form-group">
+<label for="rooms">Will you be sharing a hotel room with another participant?</label>
+<div class="room-request">
+<input type="radio" name="room" id="yyyes" value="Yes"/>
+<label for="yes" style="width:100px;font-weight:normal;margin-left:5px">Yes</label>
+<input type="radio" name="room" id="nnno" value="No"/>
+<label for="no" style="font-weight:normal;margin-left:5px">No</label>
+<div class="room-checked" style="margin-left:30px">
+<div class="form-group">
+<label for="roommate">If "Yes," please provide your roomate(s) name(s):</label>
+<input type="text" class="form-control" id="roommate" name="roommate">
+</div>
+</div>
+</div>
+</div>
+
+<label for="reason"> Reason for Attending (required if requesting funds):</label>
+<textarea type="textarea" class="form-control" id="reason" name="reason" maxlength="6000" rows="7" placeholder="Please indicate how attending this minisymposium will further your career."></textarea>
+</div>
+</div>
+
+<div class="form-group">
+<br>
+<p>
+Please be sure that you CV includes: (i) Date of Ph.D. (completed or expected), (ii) Ph.D./M.S. Advisor(s), (iii) Research area(s). Note: Only PDF files will be considered. Please limit your CV to 2-3 pages.
+</p>
+<label for="name"> CV Upload (required if requesting funds):</label>
+<input type="file" class="form-control" id="cv" name="cv">
+</div>
+</div>
+</div>
+</div>
+
+<!--
+<div class="row" style="margin-bottom:30px;">
+                            <div class="col-sm-5">
+                                <img src="captcha.php" id="captcha_image"/>
+                                <br/>
+                                <a id="captcha_reload" href="#">reload</a> 
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="email">Enter the code from the image here:</label>
+                                <input type="text" class="form-control" required id="captcha" name="captcha" >
+                            </div>
+                        </div>
+-->
+                        
+<button type="submit" class="btn btn-lg btn-success pull-right" id="btnContactUs">Submit</button>
+</form>
+                    
+<div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Submission was successful!</h3> </div>
+<div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry, there was an error with your submission.</div>
+                
+</div>
+
+<br></br>
+<p>
+If you have any issues with this page, please contact the <a href="mailto:joshua.padgett@ttu.edu,a.peace@ttu.edu?subject=RR2020%20Question" target="_blank">conference organizers</a>.
+</p>
+
+</div> <!--end of subContent div-->
+
+</div> <!--end of mainContent div-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+$('#yes').change(function () {
+    if(this.checked) {
+        $('#cv').prop('required',true);
+        $('#reason').prop('required',true);
+        $('#title').prop('required',true);
+        $('#abstract').prop('required',true);
+        $('#yyyes').prop('required',true);
+        $('#poster').prop('yyes',true);
+    } else {
+        $('#cv').prop('required',false);
+        $('#reason').prop('required',false);
+        $('#title').prop('required',false);
+        $('#abstract').prop('required',false);
+        $('#yyyes').prop('required',false);
+    }
+});
+</script>
+<script>
+document.getElementById("yes").onclick = (function() {
+    document.getElementById("yyes").click();
+});
+</script>
+<script>
+$('#yyes').change(function () {
+    if(this.checked) {
+        $('#title').prop('required',true);
+        $('#abstract').prop('required',true);
+    } else {
+        $('#title').prop('required',false);
+        $('#abstract').prop('required',false);
+    }
+});
+</script>
+<script>
+$('#yyyes').change(function () {
+    if(this.checked) {
+        $('#roommate').prop('required',true);
+    } else {
+        $('#roommate').prop('required',false);
+    }
+});
+</script>
+<script>
+$('#11').change(function () {
+    if(this.checked) {
+        $('#other').prop('required',true);
+    } else {
+        $('#other').prop('required',false);
+    }
+});
+</script>
+
+</body>
+</html>

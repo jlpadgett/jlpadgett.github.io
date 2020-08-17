@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JMM Special Session</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+    .tex { text-transform: uppercase; vertical-align: -.5ex; margin-left: -.1667em; 
+    		margin-right: -.125em; }
+    dl { display: grid; grid-template-columns: max-content auto; margin-left: 3em;
+		margin-right: 3em;}
+    dt { grid-column-start: 1; margin-right: 1em;}
+    dd { grid-column-start: 2; margin-left: 1em;}
+    dt, dd { margin-top: 1ex; }
+    span.suppress { display: none; }
+
+@media only screen and (max-width: 768px) {
+dl {
+margin-left: 0em; margin-right: 0em;
+}
+}
+</style>
+
+<style>
+.container-fluid { max-width: 80% }
+
+@media only screen and (max-width: 768px) {
+  .container-fluid {
+    max-width:100%
+  }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="home.html">Joshua Lee Padgett</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="publications.html">Publications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="presentations.html">Presentations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="teaching.html">Teaching</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="people.html">People</a>
+      </li>  
+
+<li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        More
+      </a>
+      <div class="dropdown-menu bg-dark dropdown-menu-right">
+        <a class="dropdown-item" href="grant.html"><font style="color:#ffffff">NSF Grant</font></a>
+        <a class="dropdown-item" href="JMM_Special_Session.html"><font style="color:#ffffff">JMM Special Session</font></a>
+        <a class="dropdown-item" href="http://myweb.ttu.edu/jopadget/RR/index.html"><font style="color:#ffffff">Red Raider 2020</font></a>
+        <a class="dropdown-item" href="latex.html"><font style="color:#ffffff">LaTeX Material (Quick Start)</font></a>
+      </div>
+    </li> 
+    </ul>
+  </div>  
+</nav>
+<br>
+
+<div class="container-fluid justify-content-center" style="margin-top:40px">
+   <div class="row">
+      <div class="col">
+
+<p>
+<h3>Highly accurate and structure-preserving numerical methods for nonlinear partial differential equations</h3>
+</p>
+
+<p style="text-align:justify">
+<b>Organizers:</b> <a href="https://www.researchgate.net/profile/J_Macias-Diaz2"> Jorge E. Mac&iacute;as-D&iacute;az</a> &nbsp;• <a href="https://sites.baylor.edu/qin_sheng/"> Qin Sheng</a> &nbsp;• <a href="https://www.myweb.ttu.edu/jopadget/"> Joshua Lee Padgett</a>
+</p>
+
+<p style="text-align:justify">
+This page contains the details of the proposed Special Session at the Joint Mathematics Meeting to be held in Denver Colorado, January 15-18 2020 (see <a href="https://jointmathematicsmeetings.org/meetings/abstracts/abstract.pl?type=jmm">here</a>). The organizers intend to add more details to this page&mdash;such as presentation titles, abstracts, and presentation slides&mdash;as they are obtained. Any questions or comments regarding this web page may be sent via this <a href="mailto:joshua.padgett@ttu.edu?subject=JMM Special Session Question">link</a>.
+</p>
+
+<p style="text-align:justify">
+This session will have two time slots. The first is Thursday, January 16, 2020, 1:00-4:00pm and the second is Friday, January 17, 2020, 8:00-11:00am.
+</p>
+
+<p style="text-align:justify">
+<b>Description:</b> Structure-preserving methods have emerged as a central topic in computational mathematics. It has been realized that an integrator must be designed to preserve as many of the intrinsic features of the underlying problems as possible, such as conserving the mass, momentum and energy, as well as the symplecticity and multisymplecticity of physical systems. Structure-preserving algorithms can be effectively utilized for simulations of a variety of theoretical and application problems, ranging from celestial mechanics, quantum mechanics, fluid dynamics, and artificial intelligence.
+<p>
+
+<p style="text-align:justify">
+This special session is dedicated to recent advances in the aforementioned efforts, with a focus on high accuracy and structure-preserving algorithms when partial differential equations are targeted. We intend to accommodate a sufficiently broad spectrum of investigations, and will consider both theoretical and computational aspects of the burgeoning field. 
+</p>
+
+<p> The schedule is below (with links to the abstract available, too).</p>
+
+<!-- --- -->
+
+<p><b>Thursday, January 16 (1-4pm) [Room 102, Colorado Convention Center]</b></p>
+
+<dl style="text-align:justify">
+
+<dt>
+1:00-1:20pm
+</dt>
+<dd>
+<a href="http://www.math.buffalo.edu/mad/PEEPS/mickens_ronalde.html">Ronald E. Mickens</a> (NSFD Schemes: A methodology for constructing structure-preserving discretizations for differential equations). <a href="JMM2020_Presentation_MickWash.pdf">Presentation Slides</a>
+
+<button onclick="talk6()">Abstract</button>
+
+<div id="myDIVtalk6" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><br><strong>Abstract:</strong> The differential equations of most interest for numerical analysis have their genesis in mathematical models of important
+physical phenomena. However, a major difficulty is the occurrence of numerical instabilities (NIs), i.e., solutions of the
+numerical schemes not corresponding to any solutions of the differential equations. NIs arise when critical features of the
+differential equations are not incorporated into the discretizations. The nonstandard finite difference (NSFD) methodology
+directly deals with these issues. NSFD is based on the concept of “dynamical consistency” and leads to the appearance of
+denominator functions in the discretization of derivative terms, as well as the requirement that non-local representations
+be used for the discretization of functions of the dependent variables. A tool for the construction of valid NSFD schemes
+is the method of sub-equations. We will discuss various issues related to dynamical consistency, denominator functions,
+and non-local representations, and illustrate the NSFD methodology by using it to discretize to elementary, but nontrivial
+differential equations. We will conclude with a summary of the successes of the NSFD methodology and present several
+unresolved issues available for future investigations.  </blockquote>
+</div>
+
+<script>
+function talk6() {
+  var x = document.getElementById("myDIVtalk6");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</dd>
+
+<dt>
+1:30-1:50pm
+</dt>
+<dd>
+<a href="https://www.baylor.edu/math/index.php?id=955473">Jeonghun Lee</a> (A hybridized discontinuous Galerkin method for the Stokes equations with symmetric tensor approximation).
+
+<button onclick="talk7()">Abstract</button>
+
+<div id="myDIVtalk7" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><br><strong>Abstract:</strong> In most hybridized discontinuous Galerkin methods for the Stokes equations, the formulation of first order differential
+equations which has the gradient of fluid velocity, the fluid velocity, and the fluid pressure as unknowns. However, this
+formulation uses a pseudo stress tensor instead of physical stress tensor, so it is not physically valid for problems with
+traction boundary conditions.
+<p>In this work we discuss construction and error analysis of a hybridized discontinuous Galerkin method for the Stokes
+equations which avoids the shortcomings. More specifically, we use a formulation using the symmetric gradient of fluid
+velocity as one of its unknowns, and the stress tensor is approximated by a symmetric tensor finite element space. As
+a consequence, we obtain a numerical method with optimal error estimates, such that traction boundary conditions are
+consistent with physical models and angular momentum is preserved exactly.</p> </blockquote>
+</div>
+
+<script>
+function talk7() {
+  var x = document.getElementById("myDIVtalk7");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</dd>
+
+<dt>
+2:00-2:20pm
+</dt>
+<dd>
+<a href="http://faculty.smu.edu/asukhinin/">Alexey Sukhinin</a> (Propagation of light in multi-frequency moving focus model).
+
+<button onclick="talk8()">Abstract</button>
+
+<div id="myDIVtalk8" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><br><strong>Abstract:</strong> The moving focus model describes the propagation of intense optical pulses under the effect of Kerr nonlinearity. In this
+work, we study the model extension to the multi-frequency regime. Spatial solitons with mixed topological charges were
+obtained numerically for various frequencies in both resonant and non-resonant regimes. These results could lead to a
+better understanding of critical power for multi-color optical collapse and potentially novel types of filament propagation.  </blockquote>
+</div>
+
+<script>
+function talk8() {
+  var x = document.getElementById("myDIVtalk8");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</dd>
+
+<dt>
+2:30-2:50pm
+</dt>
+<dd>
+<a href="https://www.baylor.edu/math/index.php?id=955474">Julienne Kabre</a> (A splitting approximation for the numerical solution of a self-adjoint quenching problem). <a href="Quenching_JMM_2020_3B.pdf">Presentation Slides</a>
+
+<button onclick="talk9()">Abstract</button>
+
+<div id="myDIVtalk9" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><br><strong>Abstract:</strong> Ideal combustion processes are often modelled via nonlinear reaction-diffusion equations with singular forcing terms. Our
+preliminary work considers the numerical solution of such a partial differential equation problem, where a self-adjoint
+operator with variable diffusion coefficient is considered. Traditional Peaceman-Rachford-Strang splitting is used for
+time stepping of the semi-discrete system of equations obtained. Conditions are derived to ensure the monotonicity,
+positivity, and linear stability of the finite difference method. Simulation experiments are provided to validate our
+splitting approximation. </blockquote>
+</div>
+
+<script>
+function talk9() {
+  var x = document.getElementById("myDIVtalk9");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</dd>
+
+<dt>
+3:00-3:20pm
+</dt>
+<dd>
+<a href="https://sites.google.com/site/tnjones287/">Tiffany Nicole Jones</a> (Solving highly oscillatory wave equations with an asymptotically stable dual-scale compact method).
+
+<button onclick="talk10()">Abstract</button>
+
+<div id="myDIVtalk10" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><br><strong>Abstract:</strong> A dual-scale numerical algorithm for solving highly oscillatory Helmholtz equations in polar coordinates is presented
+and analyzed. Decomposing the axisymmetric radial domain and associated governing equations provides the potential for
+optical computations via interconnected micro and macro domains. These coupled equations are subsequently discretized
+utilizing a compact strategy for increased efficiency and high radial accuracy.
+
+<p>With a focus on highly oscillatory solution features, a rigorous analysis of the numerical method showed it to be
+asymptotically stable at high wavenumbers, supporting the algorithmic effectiveness and reliability. Furthermore, spectral
+norm analysis of the amplification matrices reveals necessary constraints for conventional stability. Numerical selffocusing beam propagation simulations, including those conducted with a range domain scaling factors, reinforce these
+findings.</p> </blockquote>
+</div>
+
+<script>
+function talk10() {
+  var x = document.getElementById("myDIVtalk10");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</dd>
+
+<dt>
+3:30-3:50pm
+</dt>
+<dd>
+<a href="https://sites.baylor.edu/qin_sheng/">Qin Sheng</a> (A review and expectation of the numerical stabilities for nonlinear Kawarada equations). <a href="Slides_JMM2020.pdf">Presentation Slides</a>
+
+<button onclick="talk11()">Abstract</button>
+
+<div id="myDIVtalk11" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><br><strong>Abstract:</strong> This talk concerns the numerical stability of the nonlinear and highly singular quenching type partial differential equation
+problems. Utilizing one-dimensional sample problems, we show important physical backgrounds and characteristics of
+their solutions. Standard Crank-Nicolson schemes are used. While traditional linear stability analysis is accomplished
+by freezing the underlying source functions of the reaction-diffusion equations, the exploration of the nonlinear stability
+is proposed and carried out based on proper conservations. Interactive discussions are anticipated throughout this talk
+over aforementioned approaches. Simulation examples will be provided.</blockquote>
+</div>
+
+<script>
+function talk11() {
+  var x = document.getElementById("myDIVtalk11");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</dd>
+
+</dl>
+
+<p><b>Friday, January 17 (8-11am) [Room 102, Colorado Convention Center]</b></p>
+
+<dl style="text-align:justify">
+
+<dt>
+8:00-8:20am
+</dt>
+<dd>
+<a href="https://www.ds.unipi.gr/en/mfilip/">Michael Filippakis</a> (Multiple and nodal solutions for nonlinear equations with a nonhomogeneous differential operator and concave-convex term-nodal solutions for nonlinear problems).
+
+<button onclick="talk112()">Abstract</button>
+
+<div id="myDIVtalk112" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><br><strong>Abstract:</strong> In this paper we consider a nonlinear parametric Dirichlet problem driven by a nonhomogeneous differential operator
+(special cases are the $p-$Laplacian and the $(p,q)$-differential operator) and with a reaction which has the combined effects of concave ($(p−1)$-sublinear) and convex ($(p−1)$-superlinear) terms. We do not employ the usual in such cases AR-condition. Using variational methods based on critical point theory, together with truncation and comparison techniques and Morse theory (critical groups), we show that for all small $\lambda>0$ ($\lambda$ is a parameter), the problem has at least five nontrivial smooth solutions. We also prove two auxiliary results of independent interest. The first is a strong comparison principle and the second relates Sobolev and H&#246;lder local minimizers for $C^1$ functionals. Then we consider a nonlinear nonhomogeneous Robin problem and with Morse Theory and variational methods we prove the existence of nontrivial
+smooth solutions</blockquote>
+</div>
+
+<script>
+function talk112() {
+  var x = document.getElementById("myDIVtalk112");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</dd>
+
+<dt>
+8:30-8:50am
+</dt>
+<dd>
+<a href="http://www.numberstruck.com/alanmullenix.html">Alan Mullenix</a> (Mixed finite element methods for a linearized multilayer shallow water model).
+
+<button onclick="talk1()">Abstract</button>
+
+<div id="myDIVtalk1" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><br><strong>Abstract:</strong> Building on previous work by Cotter, Graber, and Kirby for global tides, we develop a multilayer shallow water model
+and a finite element method to compute solutions. We establish new energy estimates that rigorously prove there is a unique attracting solution in the long-time limit.</blockquote>
+</div>
+
+<script>
+function talk1() {
+  var x = document.getElementById("myDIVtalk1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</dd>
+
+<dt>
+9:00-9:20am
+</dt>
+<dd>
+<a href="https://math.louisiana.edu/node/298">Bruce A. Wade</a> (Smoothing properties and dimensional splitting with exponential time differencing schemes for advection-diffusion-reaction systems).
+
+<button onclick="talk2()">Abstract</button>
+
+<div id="myDIVtalk2" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><br><strong>Abstract:</strong> Exponential Time Differencing (ETD) schemes for advection-diffusion-reaction systems are introduced and analyzed for
+their smoothing properties when applied to systems with nonsmooth or mismatched data. Several dimensional splitting strategies are presented, with an analysis of speedup. Robust performance under a variety of types of problems is empirically developed. </blockquote>
+</div>
+
+<script>
+function talk2() {
+  var x = document.getElementById("myDIVtalk2");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</dd>
+
+<dt>
+9:30-9:50am
+</dt>
+<dd>
+<a href="https://sciences.ucf.edu/math/bmoore/">Brian Moore</a> (Structure-preserving exponential integrators with applications for damped-driven NLS).
+
+<button onclick="talk3()">Abstract</button>
+
+<div id="myDIVtalk3" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><br><strong>Abstract:</strong> Many nonlinear PDEs have invariants or conservative properties (such as energy, momentum, mass, etc.) which can
+be preserved in numerical simulations by various schemes. In the presence of driving forces or damping terms those
+properties are altered, so that numerical preservation of the properties is more challenging. For cases in which the forcing
+and/or damping is linear with time-dependent coefficients, the properties often satisfy a linear differential equation and
+can be exactly preserved through discretization using exponential integrators. This talk presents a general framework
+for constructing methods that exactly preserve dynamic changes in a number of properties (energy, momentum, mass,
+etc.) which are effected by damping and/or driving forces. The resulting exponential methods are generalizations of
+other commonly used methods, such as Runge-Kutta, discrete gradient, finite difference, and collocation methods. To
+demonstrate their effectiveness, the methods are applied to several variations of damped-driven Nonlinear Schr&#246;dinger
+equations. In many cases, higher accuracy and efficiency are both observed in structure-preserving algorithms when they
+are compared to other standard schemes. </blockquote>
+</div>
+
+<script>
+function talk3() {
+  var x = document.getElementById("myDIVtalk3");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</dd>
+
+<dt>
+10:00-10:20am
+</dt>
+<dd>
+<a href="https://math.okstate.edu/people/jku/">JaEun Ku</a> (Flux based finite element methods).
+
+<button onclick="talk4()">Abstract</button>
+
+<div id="myDIVtalk4" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><br><strong>Abstract:</strong> In this talk, we present a new finite element method based on flux variables. In many applications, the flux variables are
+often the quantity of interest. To approximate the flux variable accurately and efficiently, one transforms the second-order
+equations into a system of first-order and approximates both the primary and flux variables simultaneously. While this
+indeed produces accurate approximations for the flux variables, the resulting algebraic system is large and expensive to
+solve. We present a new method approximating the flux variables only without approximation of the primary variable.
+If necessary, the primary variable can be recovered from the flux approximation with the same order of accuracy. We
+also consider the conservation of mass. This new approach can be considered as a reduced version of the standard mixed
+finite element methods. </blockquote>
+</div>
+
+<script>
+function talk4() {
+  var x = document.getElementById("myDIVtalk4");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</dd>
+
+<dt>
+10:30-10:50am
+</dt>
+<dd>
+<a href="https://www.myweb.ttu.edu/jopadget/">Joshua Lee Padgett</a> (A nonlinear splitting algorithm for preserving asymptotic features of stochastic singular differential equations). <a href="JMM_2020_JLP.pdf">Presentation Slides</a>
+
+<button onclick="talk5()">Abstract</button>
+
+<div id="myDIVtalk5" style="display:none">
+<blockquote style="width:80%; margin-left:10%;"><br><strong>Abstract:</strong> In this talk we present a nonlinear splitting algorithm for approximating stochastic singular differential equations. In
+particular, we focus on problems whose singularities induce finite-time blow-up of either the solution, or its derivative,
+with respect to the expectation of the given norm. The proposed splitting algorithm allows for the careful handling
+of the singular and stochastic parts, separately. We also develop an adaptive time-stepping algorithm, based on the
+self-similarity of the true solution of the underlying system, which guarantees that the numerical approximation captures
+the asymptotic features of the problem—such as blow-up rates and blow-up time. Moreover, we provide convergence and
+stability results for the general abstract setting (which includes finite difference, finite element, and spectral discretizations
+of the spatial differential operators), demonstrating the robustness of the proposed algorithm. If time permits, we will
+briefly mention how the proposed method can be generalized to derive methods of arbitrarily high order. Numerical
+experiments will be provided to verify the theoretical results. </blockquote>
+</div>
+
+<script>
+function talk5() {
+  var x = document.getElementById("myDIVtalk5");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</dd>
+
+</dl>
+
+<p style="text-align:justify">
+This special session information may also be found in its ResearchGate <a href="https://www.researchgate.net/project/Highly-accurate-and-structure-preserving-numerical-methods-for-nonlinear-partial-differential-equations">project</a>.
+</p>
+
+
+<!---->
+<!---->
+<!--The following finishes off the bottom of the web page-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<!--Horizontal line for bottom of page-->
+
+<hr style="height:2px;border:none;color:#333;background-color:#333;">
+
+<!--End of Horizontal line for bottom of page-->    
+
+<center>
+<script 
+  type="text/JavaScript" 
+  language="JavaScript">
+
+function date_ddmmmyy(date)
+{
+  var d = date.getDate();
+  var m = date.getMonth() + 1;
+  var y = date.getFullYear();
+
+  var mmm = 
+    ( 1==m)?'January':( 2==m)?'February':(3==m)?'March':
+    ( 4==m)?'April':( 5==m)?'May':(6==m)?'June':
+    ( 7==m)?'July':( 8==m)?'August':(9==m)?'September':
+    (10==m)?'October':(11==m)?'November':'December';
+
+  return "" + mmm + " " +
+    (d<10?"0"+d:d) + ", " +
+    (y<10?"0"+y:y);
+}
+
+function date_lastmodified()
+{
+  var lmd = document.lastModified;
+  var s   = "Unknown";
+  var d1;
+
+  if(0 != (d1=Date.parse(lmd)))
+  {
+    s = "" + date_ddmmmyy(new Date(d1));
+  }
+
+  return s;
+}
+
+document.write( 
+  "This page was last modified on: " + 
+  date_lastmodified() );
+</script>
+</center>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</div></div></div>
+
+
+
+<script>
+$(document).click(function(e) {
+	if (!$(e.target).is('a')) {
+    	$('.collapse').collapse('hide');	    
+    }
+});
+
+$(document).scroll(function(e) {
+	if (!$(e.target).is('a')) {
+    	$('.collapse').collapse('hide');	    
+    }
+});
+</script>
+
+</body>
+</html>
+
+
+

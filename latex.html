@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LaTeX Material (Quick Start)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+    .tex { text-transform: uppercase; vertical-align: -.5ex; margin-left: -.1667em; 
+    		margin-right: -.125em; }
+    dl { display: grid; grid-template-columns: max-content auto; margin-left: 3em;
+		margin-right: 3em;}
+    dt { grid-column-start: 1; margin-right: 1em;}
+    dd { grid-column-start: 2; margin-left: 1em;}
+    dt, dd { margin-top: 1ex; }
+    span.suppress { display: none; }
+
+@media only screen and (max-width: 768px) {
+dl {
+margin-left: 0em; margin-right: 0em;
+}
+}
+</style>
+
+<style>
+.container-fluid { max-width: 80% }
+
+@media only screen and (max-width: 768px) {
+  .container-fluid {
+    max-width:100%
+  }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="home.html">Joshua Lee Padgett</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="publications.html">Publications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="presentations.html">Presentations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="teaching.html">Teaching</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="people.html">People</a>
+      </li>  
+
+<li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        More
+      </a>
+      <div class="dropdown-menu bg-dark dropdown-menu-right">
+        <a class="dropdown-item" href="grant.html"><font style="color:#ffffff">NSF Grant</font></a>
+        <a class="dropdown-item" href="JMM_Special_Session.html"><font style="color:#ffffff">JMM Special Session</font></a>
+        <a class="dropdown-item" href="http://myweb.ttu.edu/jopadget/RR/index.html"><font style="color:#ffffff">Red Raider 2020</font></a>
+        <a class="dropdown-item" href="latex.html"><font style="color:#ffffff">LaTeX Material (Quick Start)</font></a>
+      </div>
+    </li> 
+    </ul>
+  </div>  
+</nav>
+<br>
+
+<div class="container-fluid justify-content-center" style="margin-top:40px">
+   <div class="row">
+      <div class="col">
+
+<p>
+<h3>Getting Started with LaTeX</h3>
+</p>
+
+<p style="text-align:justify">
+
+This little guide is from some brief notes I passed on to my MATH 3430 class (Spring 2017), at Texas Tech University, in order to help students get started with LaTeX (in order to complete their final project). These notes are in no way a definitive guide to LaTeX, but rather, a simple starting point to get you up and running quickly. If you have suggestions or tips you think should be added to this page, please feel free to email me.
+
+</p>
+
+<p style="text-align:justify">
+
+The material on this page is meant to help you get started with LaTeX. Roughly, you can think of LaTeX as the grown-up version of Microsoft Word. LaTeX allows you to have more control over the documents that you create and also makes typesetting mathematics easier.
+
+</p>
+
+<p style="text-align:justify">
+
+First, you will need to download the required software. The link below will take you to a web page with all of the necessary software downloads.
+
+</p>
+
+<p style="text-align:justify">
+
+<a href="http://www.tug.org/interest.html#free">http://www.tug.org/interest.html#free</a>
+
+</p>
+
+<p style="text-align:justify">
+
+If clicking the link does not work, please copy and paste it into your web browser. There are numerous options for downloads once you visit the aforementioned link.
+
+</p>
+
+<p style="text-align:justify">
+
+<ol>
+
+<li style="text-align:justify"> The first thing you will need to do is choose an implementation. Under "Free TeX Implementations" there are numerous options, all of which should work reasonably well if you download the appropriate choice for your computer (many are operating system dependent). I have personally always used "MiKTeX" on my Windows computers and "TeX Live" with Linux distributions and never had any issues. I knew several people in graduate school who used "MacTeX" on their Mac computers and had no issues. Feel free to browse the Internet and see if there are suggestions for other implementations that you might like better. 
+
+</li>
+
+<br>
+
+<li style="text-align:justify"> After you download the appropriate implementation you will need a program that allows you to actually produce documents. This program will be an interface (much like Matlab) that allows you to employ the underlying software contained in your implementation. My personal suggestion is to use "TeXMaker," which is located under "Packages and Programs" in the link above. I have always used this program and have been pleased with the results. The listed programs will mostly differ in how user friendly their displays are, so it is a personal choice as to which program you should use.
+
+</li>
+
+<br>
+
+<li style="text-align:justify"> If you choose to use this software and you have any issues, I will do my best to help you.
+
+</li>
+
+</ol>
+
+</p>
+
+<p style="text-align:justify">
+
+The link below is to the official AMS website with useful resources to help you get started using LaTeX.
+
+</p>
+
+<p style="text-align:justify">
+
+<a href="http://www.ams.org/publications/authors/tex/tex-pub">http://www.ams.org/publications/authors/tex/tex-pub</a>
+
+</p>
+
+<p style="text-align:justify">
+
+If you ever get stuck trying to get the files to compile, please let me know! However, most programs will provide you with useful error codes that you can use to determine the problem. For the most part, you can copy and paste the code into your preferred search engine and obtain numerous potential solutions to your issue (I typically check Stack Exchange's solutions first).
+
+</p>
+
+<p style="text-align:justify">
+
+My suggestion is to download the relevant software and then see if you can get any of the provided .tex files (see below) to compile on your computer!
+
+</p>
+
+<p>
+<h3>DeTeXify</h3>
+</p>
+
+<p style="text-align:justify">
+
+The link below can be very useful when getting started.
+
+</p>
+
+<p style="text-align:justify">
+
+<a href="http://detexify.kirelabs.org/classify.html">http://detexify.kirelabs.org/classify.html</a>
+
+</p>
+
+<p style="text-align:justify">
+
+This link allows you to draw any symbol that you would like to have the TeX command for, and the software does it's best to recognize the symbol and generate the code. It does not work 100% of the time, but it can be useful when you are getting started.
+
+</p>
+
+<p>
+<h3>Sample Files</h3>
+</p>
+
+<p style="text-align:justify">
+
+The following files may be downloaded to the same directory and compiled in your LaTeX editor. You should think of these as a sample document to help get you started (the hardest part of getting started with LaTeX is building a decent preamble). Not every item in the .tex file is commented so you should "play" with the file and see what each component does. As time goes on (or if there is a request) I may add other LaTeX sample which employ more complicated features.
+
+</p>
+
+<p style="text-align:justify">
+
+<a href="LaTeX Sample.zip">LaTeX Sample</a>
+
+</p>
+
+<p>
+<h3>Additional LaTeX Resource</h3>
+</p>
+
+<p style="text-align:justify">
+
+A possible alternative to the software I described above is to use an online LaTeX compiler. For example, one may use the site
+
+</p>
+
+<p style="text-align:justify">
+
+<a href="https://www.overleaf.com/">https://www.overleaf.com/</a>
+
+</p>
+
+<p style="text-align:justify">
+
+to compile your files. I personally suggest avoiding this route, if possible. 
+
+</p>
+
+
+<!---->
+<!---->
+<!--The following finishes off the bottom of the web page-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<!--Horizontal line for bottom of page-->
+
+<hr style="height:2px;border:none;color:#333;background-color:#333;">
+
+<!--End of Horizontal line for bottom of page-->    
+
+<center>
+<script 
+  type="text/JavaScript" 
+  language="JavaScript">
+
+function date_ddmmmyy(date)
+{
+  var d = date.getDate();
+  var m = date.getMonth() + 1;
+  var y = date.getFullYear();
+
+  var mmm = 
+    ( 1==m)?'January':( 2==m)?'February':(3==m)?'March':
+    ( 4==m)?'April':( 5==m)?'May':(6==m)?'June':
+    ( 7==m)?'July':( 8==m)?'August':(9==m)?'September':
+    (10==m)?'October':(11==m)?'November':'December';
+
+  return "" + mmm + " " +
+    (d<10?"0"+d:d) + ", " +
+    (y<10?"0"+y:y);
+}
+
+function date_lastmodified()
+{
+  var lmd = document.lastModified;
+  var s   = "Unknown";
+  var d1;
+
+  if(0 != (d1=Date.parse(lmd)))
+  {
+    s = "" + date_ddmmmyy(new Date(d1));
+  }
+
+  return s;
+}
+
+document.write( 
+  "This page was last modified on: " + 
+  date_lastmodified() );
+</script>
+</center>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</div></div></div>
+
+
+
+<script>
+$(document).click(function(e) {
+	if (!$(e.target).is('a')) {
+    	$('.collapse').collapse('hide');	    
+    }
+});
+
+$(document).scroll(function(e) {
+	if (!$(e.target).is('a')) {
+    	$('.collapse').collapse('hide');	    
+    }
+});
+</script>
+
+</body>
+</html>
+
+
+
