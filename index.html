@@ -9,8 +9,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-
-
 <style type="text/css">
     .tex { text-transform: uppercase; vertical-align: -.5ex; margin-left: -.1667em; 
     		margin-right: -.125em; }
@@ -37,8 +35,8 @@ margin-left: 0em; margin-right: 0em;
   }
 }
 </style>
-<style>
 
+<style>
 /*
 Removes white gap between slides - chagnge to base color of slide images
 */
@@ -84,7 +82,104 @@ anchors are inline so you need ot make them block to go full width
 }
 </style>
 
+<style>
+* {box-sizing:border-box}
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 50%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 14px;
+  padding-left: 12%;
+  padding-top: 8px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 6000s;
+  animation-name: fade;
+  animation-duration: 6000s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1}
+  to {opacity: 1}
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
 
 </head>
 <body>
@@ -164,7 +259,7 @@ anchors are inline so you need ot make them block to go full width
 I am currently an Assistant Professor in the <a href="https://https://fulbright.uark.edu/departments/math/">Department of Mathematical Sciences at the University of Arkansas</a> and an Affiliated Faculty member at the <a href="https://www.baylor.edu/CASPER/">Center for Astrophysics, Space Physics, and Engineering Research</a>. I received my Ph.D. in Mathematics from Baylor University in August 2017 under the advisement of <a href="https://www.baylor.edu/Math/index.php?id=54019"> Qin "Tim" Sheng</a> and completed my postdoctoral training in the <a href="https://www.depts.ttu.edu/math/">Department of Mathematics and Statistics at Texas Tech University</a>. Before that I received my B.S. in Mathematics from Gardner-Webb University, where I also was a member of the Track and Field team (I competed in the javelin and hammer throw). My undergraduate studies also included cellular biology, which led to several semesters worth of research into various aspects of cancer metabolism (in particular, the <a href="https://en.wikipedia.org/wiki/Warburg_effect_(oncology)">Warburg effect</a>). 
 </p>
 
-<p style="text-align:justify">Here is a copy of my most recent <a title="Curriculum Vitae" href="Current_CV_JLP.pdf" target="_blank">Curriculum Vitae</a> (updated June 2020). </p>
+<p style="text-align:justify">Here is a copy of my most recent <a title="Curriculum Vitae" href="Current_CV_JLP.pdf" target="_blank">Curriculum Vitae</a> (updated August 2020). </p>
 
 <p style="text-align:justify"><a href="https://scholar.google.com/citations?user=GNvy-W8AAAAJ&hl=en">Joshua Lee Padgett's Google Scholar profile</a>.
 </p>
@@ -200,7 +295,7 @@ Below you can find some (what I believe to be) important recent updates regardin
         </ol>
         <div class="carousel-inner" role="listbox" id="thing">
             <div class="carousel-item active">
-                <a href="http://myweb.ttu.edu/jopadget/grant.html">
+                <a href="grant.html">
                       
 
                     <div class="carousel-caption justify-content-center align-items-center">
@@ -353,6 +448,93 @@ Discrete differential operators on triangulated manifolds and their applications
 -->
 
 </dl>
+
+<p>
+<h3>My Dogs</h3>
+</p>
+
+<p style="text-align:justify">
+Below are some pictures of my two dogs: Murphy (an Australian Shepherd) and Memphis (a Goldendoodle). Murphy is now approximately four years old and Memphis is now approximately two years old.
+</p>
+
+<p>
+
+<div class="slideshow-container" data-ride="carousel" data-interval="5000">
+
+<div class="mySlides fade" style="padding-left=10%">
+  <div class="numbertext">1 / 4</div>
+  <img src="pics/1Murph.png" width="80%" class="center">
+  <div class="carousel-caption" style="color: #FFFFFF; top: auto; bottom: 0px;">
+  <h3><p>Murphy (approximately 6 months old)</p></h3>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="pics/Memphis.jpg" width="80%" class="center">
+  <div class="carousel-caption" style="color: #FFFFFF; top: auto; bottom: 0px;">
+  <h3><p>Memphis (approximately 7.5 weeks old)</p></h3>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="pics/memphis2.jpg" width="80%" class="center">
+  <div class="carousel-caption" style="color: #FFFFFF; top: auto; bottom: 0px;">
+  <h3><p>Memphis (approximately 1.5 years old)</p></h3>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="pics/murph3.jpg" width="80%" class="center">
+  <div class="carousel-caption" style="color: #FFFFFF; top: auto; bottom: 0px;">
+  <h3><p>Murphy (approximately 3 years old)</p></h3>
+  </div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<div style="text-align:center; clear:both">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</p>
 
 <!---->
 <!---->
